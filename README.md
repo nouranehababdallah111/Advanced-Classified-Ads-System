@@ -238,11 +238,23 @@ bef final.sql            → Apply constraints, views, roles, and logins
 
 ## Project Structure
 
-```
-ADB/
+```Advanced-Classified-Ads-DB/
+├── dataset/                    # Raw CSV files used for BULK INSERT
+│   ├── location.csv
+│   ├── category.csv
+│   ├── user.csv
+│   ├── ad.csv
+│   ├── ad_image.csv
+│   ├── ad_attribute.csv
+│   ├── ad_attribute_value.csv
+│   ├── conversation.csv
+│   ├── message.csv
+│   ├── favorite.csv
+│   ├── review.csv
+│   ├── report.csv
+│   └── report_action.csv
 ├── SQLQuery1.sql               # Core schema (CREATE TABLE statements)
 ├── Bulk.sql                    # BULK INSERT scripts for all CSV datasets
-├── dataset/                    # Raw CSV files used for BULK INSERT
 ├── function.sql                # 15+ user-defined functions
 ├── Stored_Procedure.sql        # 20+ stored procedures
 ├── Tiggers.sql                 # 5 triggers
@@ -253,7 +265,6 @@ ADB/
 ├── C2C_doc.docx                # Full project documentation
 └── Entities & attributes.docx  # Entity/attribute reference sheet
 ```
-
 ---
 
 ## System Architecture
