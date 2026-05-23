@@ -238,6 +238,7 @@ bef final.sql            → Apply constraints, views, roles, and logins
 
 ## Project Structure
 
+```
 ADB/
 ├── SQLQuery1.sql               # Core schema (CREATE TABLE statements)
 ├── Bulk.sql                    # BULK INSERT scripts for all CSV datasets
@@ -251,6 +252,7 @@ ADB/
 ├── Schema.jpg                  # Physical schema diagram
 ├── C2C_doc.docx                # Full project documentation
 └── Entities & attributes.docx  # Entity/attribute reference sheet
+```
 
 ---
 
