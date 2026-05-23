@@ -238,8 +238,9 @@ bef final.sql            → Apply constraints, views, roles, and logins
 
 ## Project Structure
 
-```Advanced-Classified-Ads-DB/
-├── dataset/                    # Raw CSV files used for BULK INSERT
+```
+Advanced-Classified-Ads-DB/
+├── dataset/                         # Raw CSV files used for BULK INSERT
 │   ├── location.csv
 │   ├── category.csv
 │   ├── user.csv
@@ -253,17 +254,16 @@ bef final.sql            → Apply constraints, views, roles, and logins
 │   ├── review.csv
 │   ├── report.csv
 │   └── report_action.csv
-├── SQLQuery1.sql               # Core schema (CREATE TABLE statements)
-├── Bulk.sql                    # BULK INSERT scripts for all CSV datasets
-├── function.sql                # 15+ user-defined functions
-├── Stored_Procedure.sql        # 20+ stored procedures
-├── Tiggers.sql                 # 5 triggers
-├── IndexingFinalProject.sql    # Index definitions + before/after query optimization
-├── bef final.sql               # Views, constraints, roles, logins, audit log
-├── ERD.jpg                     # Entity-Relationship Diagram
-├── Schema.jpg                  # Physical schema diagram
-├── C2C_doc.docx                # Full project documentation
-└── Entities & attributes.docx  # Entity/attribute reference sheet
+├── schema.sql                       # Core schema (CREATE TABLE statements)
+├── bulk_insert.sql                  # BULK INSERT scripts for all CSV datasets
+├── functions.sql                    # 15+ user-defined functions
+├── stored_procedures.sql            # 20+ stored procedures
+├── triggers.sql                     # 5 triggers
+├── indexes.sql                      # Index definitions + before/after query optimization
+├── views_roles_constraints.sql      # Views, constraints, roles, logins, audit log
+├── ERD.jpg                          # Entity-Relationship Diagram
+├── Schema.jpg                       # Physical schema diagram
+└── documentation.docx               # Full project documentation
 ```
 ---
 
