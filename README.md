@@ -6,20 +6,20 @@ A C2C classified ads platform built on Microsoft SQL Server, engineered with a f
 
 ## Table of Contents
 
-- [Database Schema](#️-database-schema)
-- [Features](#️-features)
-- [Stored Procedures](#-stored-procedures-20)
-- [User-Defined Functions](#-user-defined-functions-15)
-- [Triggers](#-triggers-5)
-- [Views](#-views-5)
-- [Role-Based Access Control](#-role-based-access-control)
-- [Query Optimization & Indexing](#-query-optimization--indexing)
-- [Dataset](#️-dataset)
-- [Tech Stack](#️-tech-stack)
-- [Setup](#-setup)
-- [Team](#-team)
-- [Project Structure](#-project-structure)
-- [System Architecture](#-system-architecture)
+- [Database Schema](#database-schema)
+- [Features](#features)
+- [Stored Procedures](#stored-procedures-20)
+- [User-Defined Functions](#user-defined-functions-15)
+- [Triggers](#triggers-5)
+- [Views](#views-5)
+- [Role-Based Access Control](#role-based-access-control)
+- [Query Optimization & Indexing](#query-optimization--indexing)
+- [Dataset](#dataset)
+- [Tech Stack](#tech-stack)
+- [Setup](#setup)
+- [Team](#team)
+- [Project Structure](#project-structure)
+- [System Architecture](#system-architecture)
 
 ---
 
@@ -52,7 +52,7 @@ The database is named **`ClassifiedAdsDB`** and consists of **13 tables**:
 
 ---
 
-## ⚙️ Features
+## Features
 
 ### User Management
 - Registration, login, status updates, and role promotion
@@ -186,6 +186,8 @@ Tables loaded via **BULK INSERT** from CSV files:
 
 `Location` → `Category` → `User` → `Ad` → `AdImage` → `AdAttribute` → `AdAttributeValue` → `Conversation` → `Message` → `Favorite` → `Review` → `Report` → `ReportAction`
 
+ [Download Dataset](https://drive.google.com/drive/folders/1SQWqYJARHkw1MkSh7D5FfaBFtTE0v2B6)
+
 ---
 
 ## Tech Stack
@@ -198,25 +200,20 @@ Tables loaded via **BULK INSERT** from CSV files:
 
 ## Setup
 
-1. Restore the database backup:
-```sql
-RESTORE DATABASE ClassifiedAdsDB
-FROM DISK = 'path\to\classifid_ad.bak'
-WITH REPLACE;
+Run scripts in this order:
+
+```
+schema.sql                  → Create all tables
+bulk_insert.sql             → Load dataset (update CSV paths first)
+functions.sql               → Create all UDFs
+stored_procedures.sql       → Create all stored procedures
+triggers.sql                → Create all triggers
+indexes.sql                 → Create indexes
+views_roles_constraints.sql → Apply constraints, views, roles, and logins
 ```
 
-2. Run scripts in this order:
-```
-SQLQuery1.sql            → Create all tables
-Bulk.sql                 → Load dataset (update CSV paths first)
-function.sql             → Create all UDFs
-Stored_Procedure.sql     → Create all stored procedures
-Tiggers.sql              → Create all triggers
-IndexingFinalProject.sql → Create indexes
-bef final.sql            → Apply constraints, views, roles, and logins
-```
+> ⚠️ The CSV files are available in the `dataset/` folder. Update the paths in `bulk_insert.sql` to match your local machine before running.
 
-> ⚠️ The CSV files are available in the `dataset/` folder. Update the paths in `Bulk.sql` to match your local machine before running.
 ---
 
 ## Team
@@ -231,8 +228,7 @@ bef final.sql            → Apply constraints, views, roles, and logins
 | 6 | Mona Helal Abdelnaby Galal |
 | 7 | Ebtsam Samer Shabaan |
 | 8 | Aya Mohamed Mahmoud |
-| 9 | Amira mohamed saad |
-
+| 9 | Amira Mohamed Saad |
 
 ---
 
@@ -265,6 +261,7 @@ Advanced-Classified-Ads-DB/
 ├── Schema.jpg                       # Physical schema diagram
 └── documentation.docx               # Full project documentation
 ```
+
 ---
 
 ## System Architecture
