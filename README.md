@@ -54,41 +54,41 @@ The database is named **`ClassifiedAdsDB`** and consists of **13 tables**:
 
 ## ⚙️ Features
 
-### 👤 User Management
+### User Management
 - Registration, login, status updates, and role promotion
 - Three roles: **user**, **moderator**, **admin**
 - Check constraints enforce valid role values and statuses
 
-### 📢 Advertisement Lifecycle
+### Advertisement Lifecycle
 - Status flow: `pending → active → sold / rejected`
 - Multi-image support via `AdImage`
 - Flexible product attributes via `AdAttribute` / `AdAttributeValue`
 - Currency field defaults to **EGP**
 
-### 🔍 Search & Filtering
+### Search & Filtering
 - Filter by title (LIKE), category, location, and price range
 - Dedicated stored procedure: `SearchAdvertisements`
 
-### ❤️ Favorites
+### Favorites
 - Users can save and remove ads from their favorites list
 - `Favorite` uses a composite primary key `(user_id, ad_id)`
 
-### 💬 Messaging System
+### Messaging System
 - Conversations are scoped to a specific ad between buyer and seller
 - Check constraint prevents a user from messaging themselves
 
-### ⭐ Review & Rating
+### Review & Rating
 - Users rate sellers on a 1–5 scale
 - Constraint prevents self-reviews (`reviewer_id <> reviewed_user_id`)
 
-### 🚨 Reporting & Moderation
+### Reporting & Moderation
 - Users report ads or users; reports enter a `pending → in_review → resolved` flow
 - Moderators can: **warn**, **delete ad**, **ban user**, or **ignore**
 - `ReportAction` logs every moderator decision
 
 ---
 
-## 🧰 Stored Procedures (20+)
+## Stored Procedures (20+)
 
 Grouped by domain:
 
@@ -236,7 +236,7 @@ bef final.sql            → Apply constraints, views, roles, and logins
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ADB/
 ├── SQLQuery1.sql               # Core schema (CREATE TABLE statements)
@@ -254,7 +254,7 @@ ADB/
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 The database is named **`ClassifiedAdsDB`** and runs on a single Microsoft SQL Server instance. All tables are co-located within one database, with logical separation enforced through role-based access control — each role (Admin, Moderator, User, Guest) is granted access only to the views and tables relevant to their responsibilities.
 
