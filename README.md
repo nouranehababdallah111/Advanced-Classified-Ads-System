@@ -4,6 +4,16 @@ A C2C classified ads platform built on Microsoft SQL Server, engineered with a f
 
 ---
 
+## 📥 Downloads
+ 
+| Resource | Link |
+|---|---|
+| 🗄️ Database Backup (.bak) | [Download](https://drive.google.com/file/d/1s_XokwL0h5PPRfSxiytmI09KmyDLGiJS/view?usp=drive_link) |
+| 📂 Full Dataset (CSV files) | [Download](https://drive.google.com/drive/folders/1SQWqYJARHkw1MkSh7D5FfaBFtTE0v2B6) |
+
+---
+
+
 ## Table of Contents
 
 - [Database Schema](#database-schema)
@@ -16,9 +26,9 @@ A C2C classified ads platform built on Microsoft SQL Server, engineered with a f
 - [Query Optimization & Indexing](#query-optimization--indexing)
 - [Dataset](#dataset)
 - [Tech Stack](#tech-stack)
-- [Team](#team)
 - [Project Structure](#project-structure)
 - [System Architecture](#system-architecture)
+- [Team](#team)
 
 ---
 
@@ -185,8 +195,6 @@ Tables loaded via **BULK INSERT** from CSV files:
 
 `Location` → `Category` → `User` → `Ad` → `AdImage` → `AdAttribute` → `AdAttributeValue` → `Conversation` → `Message` → `Favorite` → `Review` → `Report` → `ReportAction`
 
-📂 [Download Classified ads Dataset](https://drive.google.com/drive/folders/1SQWqYJARHkw1MkSh7D5FfaBFtTE0v2B6)
-
 ---
 
 ## Tech Stack
@@ -194,22 +202,6 @@ Tables loaded via **BULK INSERT** from CSV files:
 - **DBMS:** Microsoft SQL Server (MSSQL 2022)
 - **Language:** T-SQL
 - **Tools:** SQL Server Management Studio (SSMS)
-
----
-
-## Team
-
-| # | Name |
-|---|---|
-| 1 | Nouran Ehab Abdallah |
-| 2 | Basmala Salah Nasr |
-| 3 | Elaf Sayed Abdelgawad |
-| 4 | Shahd Mohamed Gallal |
-| 5 | Mariam Ashraf Hassanin |
-| 6 | Mona Helal Abdelnaby Galal |
-| 7 | Ebtsam Samer Shabaan |
-| 8 | Aya Mohamed Mahmoud |
-| 9 | Amira Mohamed Saad |
 
 ---
 
@@ -224,7 +216,6 @@ Advanced-Classified-Ads-DB/
 ├── triggers.sql                     # 5 triggers
 ├── indexes.sql                      # Index definitions + before/after query optimization
 ├── views_roles_constraints.sql      # Views, constraints, roles, logins, audit log
-├── classifid_ad.bak                 # Full database backup — 1.6M+ records
 ├── ERD.jpg                          # Entity-Relationship Diagram
 ├── Schema.jpg                       # Physical schema diagram
 └── documentation.docx               # Full project documentation
@@ -241,3 +232,19 @@ Data integrity across the system is maintained through:
 - **Check constraints** enforcing valid values for roles, statuses, prices, and ratings
 - **Triggers** handling automated logic at the database layer
 - **Views** acting as controlled access points per role
+
+---
+
+## Team
+
+| # | Name |
+|---|---|
+| 1 | Nouran Ehab Abdallah |
+| 2 | Basmala Salah Nasr |
+| 3 | Elaf Sayed Abdelgawad |
+| 4 | Shahd Mohamed Gallal |
+| 5 | Mariam Ashraf Hassanin |
+| 6 | Mona Helal Abdelnaby Galal |
+| 7 | Ebtsam Samer Shabaan |
+| 8 | Aya Mohamed Mahmoud |
+| 9 | Amira Mohamed Saad |
