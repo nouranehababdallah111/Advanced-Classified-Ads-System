@@ -4,7 +4,7 @@ A C2C classified ads platform built on Microsoft SQL Server, engineered with a f
 
 ---
 
-## 📥 Downloads
+## Downloads
  
 | Resource | Link |
 |---|---|
