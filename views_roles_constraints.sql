@@ -1,7 +1,3 @@
-RESTORE DATABASE ClassifiedAdsDB
-FROM DISK = 'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\Backup\classifid_ad.bak'
-WITH REPLACE;
-GO
 CREATE TABLE AuditLog (
     log_id INT IDENTITY(1,1),
     table_name NVARCHAR(50),
