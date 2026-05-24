@@ -8,8 +8,8 @@ A C2C classified ads platform built on Microsoft SQL Server, engineered with a f
  
 | Resource | Link |
 |---|---|
-| 🗄️ Database Backup (.bak) | [Download](https://drive.google.com/file/d/1s_XokwL0h5PPRfSxiytmI09KmyDLGiJS/view?usp=drive_link) |
-| 📂 Full Dataset (CSV files) | [Download](https://drive.google.com/drive/folders/1SQWqYJARHkw1MkSh7D5FfaBFtTE0v2B6) |
+| Database Backup (.bak) | [Download](https://drive.google.com/file/d/1s_XokwL0h5PPRfSxiytmI09KmyDLGiJS/view?usp=drive_link)     |
+| Full Dataset (CSV files) | [Download](https://drive.google.com/drive/folders/1SQWqYJARHkw1MkSh7D5FfaBFtTE0v2B6)    |
 
 ---
 
