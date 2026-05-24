@@ -217,20 +217,6 @@ Tables loaded via **BULK INSERT** from CSV files:
 
 ```
 Advanced-Classified-Ads-DB/
-├── dataset/                         # Raw CSV files used for BULK INSERT
-│   ├── location.csv
-│   ├── category.csv
-│   ├── user.csv
-│   ├── ad.csv
-│   ├── ad_image.csv
-│   ├── ad_attribute.csv
-│   ├── ad_attribute_value.csv
-│   ├── conversation.csv
-│   ├── message.csv
-│   ├── favorite.csv
-│   ├── review.csv
-│   ├── report.csv
-│   └── report_action.csv
 ├── schema.sql                       # Core schema (CREATE TABLE statements)
 ├── bulk_insert.sql                  # BULK INSERT scripts for all CSV datasets
 ├── functions.sql                    # 15+ user-defined functions
@@ -238,7 +224,7 @@ Advanced-Classified-Ads-DB/
 ├── triggers.sql                     # 5 triggers
 ├── indexes.sql                      # Index definitions + before/after query optimization
 ├── views_roles_constraints.sql      # Views, constraints, roles, logins, audit log
-├── classifid_ad.bak                 # Full database backup — 1M+ records
+├── classifid_ad.bak                 # Full database backup — 1.6M+ records
 ├── ERD.jpg                          # Entity-Relationship Diagram
 ├── Schema.jpg                       # Physical schema diagram
 └── documentation.docx               # Full project documentation
