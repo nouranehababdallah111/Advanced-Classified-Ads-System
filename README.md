@@ -28,7 +28,6 @@ A C2C classified ads platform built on Microsoft SQL Server, engineered with a f
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [System Architecture](#system-architecture)
-- [Team](#team)
 
 ---
 
