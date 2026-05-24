@@ -185,7 +185,7 @@ Tables loaded via **BULK INSERT** from CSV files:
 
 `Location` → `Category` → `User` → `Ad` → `AdImage` → `AdAttribute` → `AdAttributeValue` → `Conversation` → `Message` → `Favorite` → `Review` → `Report` → `ReportAction`
 
-📂 [Download Dataset](https://drive.google.com/drive/folders/1SQWqYJARHkw1MkSh7D5FfaBFtTE0v2B6)
+📂 [Download Classified ads Dataset](https://drive.google.com/drive/folders/1SQWqYJARHkw1MkSh7D5FfaBFtTE0v2B6)
 
 ---
 
