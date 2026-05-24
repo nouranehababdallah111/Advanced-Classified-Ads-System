@@ -210,7 +210,6 @@ Tables loaded via **BULK INSERT** from CSV files:
 ```
 Advanced-Classified-Ads-DB/
 ├── schema.sql                       # Core schema (CREATE TABLE statements)
-├── bulk_insert.sql                  # BULK INSERT scripts for all CSV datasets
 ├── functions.sql                    # 15+ user-defined functions
 ├── stored_procedures.sql            # 20+ stored procedures
 ├── triggers.sql                     # 5 triggers
@@ -234,17 +233,3 @@ Data integrity across the system is maintained through:
 - **Views** acting as controlled access points per role
 
 ---
-
-## Team
-
-| # | Name |
-|---|---|
-| 1 | Nouran Ehab Abdallah |
-| 2 | Basmala Salah Nasr |
-| 3 | Elaf Sayed Abdelgawad |
-| 4 | Shahd Mohamed Gallal |
-| 5 | Mariam Ashraf Hassanin |
-| 6 | Mona Helal Abdelnaby Galal |
-| 7 | Ebtsam Samer Shabaan |
-| 8 | Aya Mohamed Mahmoud |
-| 9 | Amira Mohamed Saad |
