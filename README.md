@@ -231,4 +231,5 @@ Data integrity across the system is maintained through:
 - **Triggers** handling automated logic at the database layer
 - **Views** acting as controlled access points per role
 
+
 ---
