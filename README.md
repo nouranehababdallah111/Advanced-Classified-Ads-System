@@ -1,6 +1,6 @@
 # Advanced-Classified-Ads-DB
 
-A C2C classified ads platform built on Microsoft SQL Server, engineered with a focus on advanced database internals — stored procedures, triggers, user-defined functions, indexing optimization, role-based access control, and audit logging.
+A C2C classified ads platform built on Microsoft SQL Server, engineered with a focus on advanced database internals — stored procedures, triggers, user-defined functions, indexing optimization, role-based access control, and audit logging. Backed by a synthetically generated dataset of 1.6M+ records.
 
 ---
 
@@ -16,7 +16,6 @@ A C2C classified ads platform built on Microsoft SQL Server, engineered with a f
 - [Query Optimization & Indexing](#query-optimization--indexing)
 - [Dataset](#dataset)
 - [Tech Stack](#tech-stack)
-- [Setup](#setup)
 - [Team](#team)
 - [Project Structure](#project-structure)
 - [System Architecture](#system-architecture)
@@ -180,13 +179,13 @@ Each index was validated with before/after query comparisons, eliminating full t
 
 ## Dataset
 
-All data was **generated synthetically using an LLM**, then carefully cleaned and validated to comply with all business logic constraints — including referential integrity, role consistency, status flows, price constraints, and self-review prevention. No third-party dataset repositories were used.
+All data was **generated synthetically using an LLM**, then carefully cleaned and validated to comply with all business logic constraints — including referential integrity, role consistency, status flows, price constraints, and self-review prevention. The dataset contains **1.6M+ records** across all tables.
 
 Tables loaded via **BULK INSERT** from CSV files:
 
 `Location` → `Category` → `User` → `Ad` → `AdImage` → `AdAttribute` → `AdAttributeValue` → `Conversation` → `Message` → `Favorite` → `Review` → `Report` → `ReportAction`
 
- [Download Dataset](https://drive.google.com/drive/folders/1SQWqYJARHkw1MkSh7D5FfaBFtTE0v2B6)
+📂 [Download Dataset](https://drive.google.com/drive/folders/1SQWqYJARHkw1MkSh7D5FfaBFtTE0v2B6)
 
 ---
 
@@ -195,24 +194,6 @@ Tables loaded via **BULK INSERT** from CSV files:
 - **DBMS:** Microsoft SQL Server (MSSQL 2022)
 - **Language:** T-SQL
 - **Tools:** SQL Server Management Studio (SSMS)
-
----
-
-## Setup
-
-Run scripts in this order:
-
-```
-schema.sql                  → Create all tables
-bulk_insert.sql             → Load dataset (update CSV paths first)
-functions.sql               → Create all UDFs
-stored_procedures.sql       → Create all stored procedures
-triggers.sql                → Create all triggers
-indexes.sql                 → Create indexes
-views_roles_constraints.sql → Apply constraints, views, roles, and logins
-```
-
-> ⚠️ The CSV files are available in the `dataset/` folder. Update the paths in `bulk_insert.sql` to match your local machine before running.
 
 ---
 
@@ -257,6 +238,7 @@ Advanced-Classified-Ads-DB/
 ├── triggers.sql                     # 5 triggers
 ├── indexes.sql                      # Index definitions + before/after query optimization
 ├── views_roles_constraints.sql      # Views, constraints, roles, logins, audit log
+├── classifid_ad.bak                 # Full database backup — 1M+ records
 ├── ERD.jpg                          # Entity-Relationship Diagram
 ├── Schema.jpg                       # Physical schema diagram
 └── documentation.docx               # Full project documentation
